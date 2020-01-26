@@ -16,10 +16,8 @@ public class Loan {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
     @NotNull
     private LocalDate loanDate;
-
     @NotNull
     private LocalDate returnDate;
 }
