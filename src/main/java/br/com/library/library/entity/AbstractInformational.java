@@ -18,7 +18,7 @@ import javax.validation.constraints.NotBlank;
 public class AbstractInformational {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @NotBlank
     private String title;
