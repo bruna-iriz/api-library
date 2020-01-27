@@ -10,6 +10,7 @@ import javax.validation.constraints.NotBlank;
 
 @Data
 @Entity
+@Table(name = "abstract_informational")
 @NoArgsConstructor
 @AllArgsConstructor
 public class AbstractInformational {
