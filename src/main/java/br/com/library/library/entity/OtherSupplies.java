@@ -1,17 +1,17 @@
-package br.com.library.library;
+package br.com.library.library.entity;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
+import javax.persistence.Embeddable;
 import java.io.Serializable;
 
-@Getter
-@Setter
+@Data
+@Embeddable
 @NoArgsConstructor
 @AllArgsConstructor
-public class SchoolSupplies implements Serializable {
+public class OtherSupplies implements Serializable {
 
     private String description;
 }
