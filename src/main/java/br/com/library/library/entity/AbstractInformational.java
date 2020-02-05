@@ -6,13 +6,14 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import java.io.Serializable;
 
 @Data
 @Entity
 @Table(name = "abstract_informational")
 @NoArgsConstructor
 @AllArgsConstructor
-public class AbstractInformational {
+public class AbstractInformational implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
