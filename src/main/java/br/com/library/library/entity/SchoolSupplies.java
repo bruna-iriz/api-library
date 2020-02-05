@@ -1,17 +1,18 @@
-package br.com.library.library;
+package br.com.library.library.entity;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.io.Serializable;
 
-@Getter
-@Setter
+@Data
+@Entity
+@Table(name = "school_supplies")
 @NoArgsConstructor
 @AllArgsConstructor
 public class SchoolSupplies implements Serializable {
-
     private String description;
 }

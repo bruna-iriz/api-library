@@ -6,8 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
+import java.io.Serializable;
 import java.time.LocalDate;
 
 @Data
@@ -15,7 +14,7 @@ import java.time.LocalDate;
 @Table(name = "loan")
 @NoArgsConstructor
 @AllArgsConstructor
-public class Loan {
+public class Loan implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
