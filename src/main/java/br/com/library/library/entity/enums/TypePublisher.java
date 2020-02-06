@@ -10,9 +10,9 @@ import java.util.stream.Stream;
 @AllArgsConstructor
 public enum TypePublisher {
 
-    BOOK(01, "BOOK"),
-    DIDACTIC_BOOK(02, "DIDACTIC_BOOK"),
-    MAGAZINE(03, "MAGAZINE"),
+    BOOK(1, "BOOK"),
+    DIDACTIC_BOOK(2, "DIDACTIC_BOOK"),
+    MAGAZINE(3, "MAGAZINE"),
     OTHERS(0, "OTHERS");
 
     private int id;
