@@ -21,7 +21,6 @@ public class Publisher implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @NotNull
     private Long id;
-    @NotBlank
     @Enumerated(EnumType.STRING)
     private TypePublisher name;
     @NotNull
